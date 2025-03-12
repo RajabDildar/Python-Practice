@@ -1,0 +1,66 @@
+print("Hello World!")
+
+# variables
+name = "Rajab"
+age = 17
+institute = "UAF"
+print(f"type of name = {type(name)} and type of age = {type(age)}")
+# print("Welcome", name, "of age", age, "from your institute", institute)
+print(f"Welcome {name} of age {age} from your institute {institute}")
+
+# python is case sensitive
+price = 200
+Price = 300
+print(price)
+print(Price)
+
+# Arithmetic operators
+num1 = 22
+num2 = 11
+sum1 = num1 + num2
+diff1 = num1 - num2
+print(sum1)
+print(diff1)
+print(f"num2 ** 2 = {num2 ** 2}")  # output should be 11**2 = 121
+
+# conditional statements
+if age>= 18:
+    print("You are an Adult")
+elif age >=13:
+    print("You are a Teen")
+else:
+    print("You are a child") 
+
+# functions
+def greet(name):
+    print(f"hello {name}!")
+greet("Ali")
+
+# expressions execution
+A,B = 2,3
+Txt = "Ali"
+print(A*Txt*B)  # the output should be 2*3 = 6 times "Ali" printed because when we multiply an integer with string, the string repeats itself according to that integer value
+
+C,D = "2",3
+Txt2 = "@"
+print((C+Txt2)*D)  # the output should be 2@2@2@
+
+
+print(7 / 3)  # Output: 2.333...  
+# integer division is same as floor in math
+print(7 // 3) # Output: 2  (// => integer division is used when we dont want floating value in answer)
+
+# when // or any other operator is used with floats, the result will be float
+print(7.0 // 3)   # Output: 2.0  
+print(10.5 // 3)  # Output: 3.0  
+print(10.5 * 2)   # Output will be 21.0 (floating value)
+
+"""This is 
+a multiline
+comment in python"""
+
+# Taking input from user and printing it
+username = input("username : ")
+userage = int(input("age : "))
+penprice = float(input("Pen price : "))
+print(f"Hi! My name is {username} and I am {userage} years old. this pen costs ${penprice}")
