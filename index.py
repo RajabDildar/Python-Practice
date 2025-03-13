@@ -1,7 +1,7 @@
 print("Hello World!")
 
 # variables
-name = "Rajab"
+name = "Rajab Ali"
 age = 17
 institute = "UAF"
 print(f"type of name = {type(name)} and type of age = {type(age)}")
@@ -14,6 +14,11 @@ Price = 300
 print(price)
 print(Price)
 
+# type conversion => converting one datatype to another
+print(str(price))
+a = "22"
+print(int(a) + 5)  # output should be 27
+
 # Arithmetic operators
 num1 = 22
 num2 = 11
@@ -22,14 +27,6 @@ diff1 = num1 - num2
 print(sum1)
 print(diff1)
 print(f"num2 ** 2 = {num2 ** 2}")  # output should be 11**2 = 121
-
-# conditional statements
-if age>= 18:
-    print("You are an Adult")
-elif age >=13:
-    print("You are a Teen")
-else:
-    print("You are a child") 
 
 # functions
 def greet(name):
@@ -59,8 +56,3 @@ print(10.5 * 2)   # Output will be 21.0 (floating value)
 a multiline
 comment in python"""
 
-# Taking input from user and printing it
-username = input("username : ")
-userage = int(input("age : "))
-penprice = float(input("Pen price : "))
-print(f"Hi! My name is {username} and I am {userage} years old. this pen costs ${penprice}")
