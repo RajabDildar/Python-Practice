@@ -1,3 +1,4 @@
+# strings are immutable
 name = "Rajab Ali"
 
 print(f"len(name) = {len(name)} and name[0] = {name[0]}")
