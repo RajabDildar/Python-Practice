@@ -28,11 +28,6 @@ print(sum1)
 print(diff1)
 print(f"num2 ** 2 = {num2 ** 2}")  # output should be 11**2 = 121
 
-# functions
-def greet(name):
-    print(f"hello {name}!")
-greet("Ali")
-
 # expressions execution
 A,B = 2,3
 Txt = "Ali"

@@ -1,4 +1,4 @@
-# sets are immutable. we cannot store mutable datatypes like lists and dictionaries in sets
+# sets elements are immutable. we cannot store mutable datatypes like lists and dictionaries in sets
 # sets are collection of unordered and distinct items. each element in sets must be unique and immutable
 # duplicate values in sets are ignored
 # sets => mutable (i.e, we can add or remove elements in a set)
