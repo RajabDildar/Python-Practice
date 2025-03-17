@@ -6,12 +6,18 @@ class Dog:
         self.name = name
         self.age = age
 
+
+    @staticmethod  #for methods that do not require self and work at class level, @staticmethod decorator is used
+    def hello():
+        print("Hello EveryOne!")
+
     def bark(self):
         print(f"{self.name} is barking...")
 
 # making object from class
 dog1 = Dog("Cooper",6)
 dog1.bark()
+dog1.hello()
 print(dog1.name, dog1.age, dog1.Kingdom)
 
 # =============================================== Cat class  =======================================
@@ -49,7 +55,7 @@ animal_sound(Cat1)
 animal_sound(Duck1)
 
 # ===================================== person class ==========================================
-
+# inheritance
 class Person:
     def __init__(self):
         print("creating person object...")
@@ -83,3 +89,37 @@ class engineer(Person):
 eng1 = engineer()
 eng1.eat()
 eng1.work()
+
+# ========================================= banking system =======================================================
+
+class Account:
+    def __init__(self,bal,acc,password):
+        self.bal = bal
+        self.acc = acc
+        # creating private methods (start with double underscore __ ) that should not be accessible outside class
+        self.__password = password
+        # print(f"Your account password is {self.__password} . Do not share it with anyone!")
+        print(f"New account created successfully for account number : {self.acc}")
+
+    def debit(self,amount):
+        self.bal -= amount
+        print(f"you have debitted Rs. {amount} from your account {self.acc}.Remaining balance = {self.bal}")
+
+    def credit(self,amount):
+        self.bal += amount
+        print(f"you have creditted Rs. {amount} in your account {self.acc}.Current balance = {self.bal}")
+
+    def get_balance(self):
+        print(f"Your current balance is {self.bal}")
+
+# creating objects
+newAcc1 = Account(1000,"abc123","123bnvhv")
+newAcc1.debit(100)
+newAcc1.credit(200)
+newAcc1.get_balance()
+
+newAcc2 = Account(1020,"aaa","21dwdwdcknl")
+# delete keyword
+del newAcc2.bal
+del newAcc2
+# print(newAcc2)
